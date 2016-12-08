@@ -1,3 +1,7 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
 .heading-style {
   background-image: image('./images/Profile.jpg');
   background-size: cover;
@@ -12,4 +16,15 @@
 
 .text-shadow {
   text-shadow:  1px 1px #000000;
+}
+
+.toolbox-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ff5722;
+}
+
+.tool-icon {
+  color: #ff5722;
 }
