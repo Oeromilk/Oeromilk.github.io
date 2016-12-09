@@ -8,166 +8,134 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   </head>
-  <body>
+  <body class="grey lighten-2">
 
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper teal lighten-4 z-depth-3">
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html"><i class="material-icons left">person_pin</i>About</a></li>
-            <li><a href="work.html"><i class="material-icons left">web</i>Work</a></li>
-            <li><a href="collapsible.html"><i class="material-icons left">contacts</i>CContact</a></li>
-          </ul>
-        </div>
-      </nav>
+  <nav>
+    <div class="nav-wrapper deep-orange z-depth-3">
+      <a href="#!" class="brand-logo">Alexander McComb</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html"><i class="material-icons left">person_pin</i>About</a></li>
+        <li><a href="#work"><i class="material-icons left">web</i>Work</a></li>
+        <li><a href="#contact"><i class="material-icons left">contacts</i>Contact</a></li>
+        <li><a href="./files/Resume.pdf"><i class="material-icons left">assignment</i>Resume</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html"><i class="material-icons left">person_pin</i>About</a></li>
+        <li><a href="#work"><i class="material-icons left">web</i>Work</a></li>
+        <li><a href="#contact"><i class="material-icons left">contacts</i>Contact</a></li>
+        <li><a href="./files/Resume.pdf"><i class="material-icons left">assignment</i>Resume</a></li>
+      </ul>
     </div>
+  </nav>
 
+<div class="container">
+  <div class="row heading">
+    <div class="col s12 m12 heading-style">
+      <h1 class="center-align text-shadow deep-orange-text ">I'm Alexander</h1>
+      <h4 class="center-align text-shadow thin deep-orange-text">a web developer.</h4>
+    </div>
+    <div class="row">
+      <div class="col m4 center-align">
+        <i class="fa fa-wrench fa-5x tool-icon" aria-hidden="true"></i>
+        <h5>Web Tools</h5>
+        <p>
+          I utilize a number of web tools to help create and maintain code.
+          Git and GitHub are used for version control, collaboration, and simple hosting services.
+          NPM and other generators to help scaffold projects and get code up and running faster.
+          These tools allow me to get projects up and running so I can just focus on writing code.
+        </p>
+      </div>
+      <div class="col m4 center-align">
+        <i class="fa fa-mobile fa-5x tool-icon" aria-hidden="true"></i>
+        <h5>Responsive Design</h5>
+        <p>
+          I have experience with various front end frameworks like Bootstrap and Materialize.
+          These tools allow me to utilize their grid system and built in components to make great looking, consistent, and reliable layouts.
+          Front end frameworks like Bootstrap and Materialize allow me to focus on the programming of the application while having great design.
+        </p>
+      </div>
+      <div class="col m4 center-align">
+        <i class="fa fa-desktop fa-5x tool-icon" aria-hidden="true"></i>
+        <h5>Front End Engineering</h5>
+        <p>
+          JavaScript and modern frameworks like React along side with Backbone, Underscore, and JQuery allow me to build robust web applications.
+          Those utilities with HTML5 and CSS3 bring together web applications that have great functionality with beautiful design.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <div id="app">
-      <div class="row heading">
-        <div class="col s12 m12 heading-style">
-          <h1 class="center-align">I'm Alexander</h1>
-          <h4 class="center-align">a web developer.</h4>
+  <div id="work" class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./images/shelf.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Shelf A Homerun App<i class="material-icons right">more_vert</i></span>
+          <span class="card-text grey-text text-darken-4">JQuery, React, Backbone, BootStrap, SASS</span>
+          <p><a href="https://oeromilk.github.io/10.0-final-project/">Shelf</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Shelf<i class="material-icons right">close</i></span>
+          <p>Ever catch a homerun ball at a Major League Baseball game? This is the place to keep track of that on your
+          "virtual shelf". Select a date and see a list of games for that day. Once the game has been selected you
+          will see a list of homeruns, if any.</p>
         </div>
       </div>
-
-      <div class="row cards">
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row contact">
-          <div class="col s12 m6">
-            <div class="collection center-align">
-              <a href="https://github.com/Oeromilk" class="collection-item">Git Hub</a>
-              <a href="https://www.linkedin.com/in/alexanderjmccomb" class="collection-item">Linked In</a>
-              <a href="#!" class="collection-item">Alvin</a>
-              <a href="#!" class="collection-item">Alvin</a>
-            </div>
-          </div>
-        </div>
-
     </div>
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./images/surf-paddle.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Blog For Surf Shop<i class="material-icons right">more_vert</i></span>
+          <span class="card-text grey-text text-darken-4">HTML5, CSS3</span>
+          <p><a href="https://oeromilk.github.io/surf-paddle/">Surf &#38; Paddle</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Surf &#38; Paddle Co.<i class="material-icons right">close</i></span>
+          <p>A demo of what a blog could look like for surf shop. Some simple layout with design elements to showcase possibilites.
+          This is a static website design just to show what is possible.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="./images/github-clone.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">GitHub Clone<i class="material-icons right">more_vert</i></span>
+          <span class="card-text grey-text text-darken-4">HTML5, BootStrap, Handlebars, JQuery</span>
+          <p><a href="http://alexandermccomb.com/4.4-github-profile/">GitHub Clone</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">GitHub Clone<i class="material-icons right">close</i></span>
+          <p>This is a project I worked on using GitHub's API to build a simple profile/repo clone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col s12 m12">
+      <h3 id="contact" class="center-align">Get In Touch</h3>
+      <div id="contact-style" class="collection center-align z-depth-3">
+        <a href="https://github.com/Oeromilk" class="collection-item">Git Hub</a>
+        <a href="https://www.linkedin.com/in/alexanderjmccomb" class="collection-item">Linked In</a>
+        <a href="https://twitter.com/AgedMcNugget" class="collection-item">Twitter</a>
+        <a href="mailto:alexanderjmccomb@gmail.com?subject=ReachingOutFromYourPortfolio" class="collection-item">Email Me</a>
+        <a href="tel:+1-434-242-7255" class="collection-item">Call Me</a>
+      </div>
+    </div>
+  </div>
 
+</div>
+
+    <script src="https://use.fontawesome.com/3d1fbbc224.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script type="text/javascript" src="index.js"></script>

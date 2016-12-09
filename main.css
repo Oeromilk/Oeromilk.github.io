@@ -1,5 +1,10 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
 .heading-style {
-  height: 1750px;
+  background-image: image('./images/Profile.jpg');
+  background-size: cover;
   position: relative;
 }
 
@@ -9,14 +14,21 @@
   left: 0;
 }
 
-.heading {
-  background-color: #2196f3
+.text-shadow {
+  text-shadow:  1px 1px #000000;
 }
 
-.cards {
-  background-color: #81c784;
+.toolbox-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ff5722;
 }
 
-.contact {
-  background-color: #ffca28;
+.tool-icon {
+  color: #ff5722;
+}
+
+#contact-style a {
+  color: #ff5722;
 }
